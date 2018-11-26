@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">org.apache.derby.jdbc.ClientDriver</property>
+        <property name="connection.url">jdbc:derby://localhost/IDrabinaJPA</property>
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        <property name="use_sql_comments">true</property>
+        <property name="hbm2ddl.auto">update</property>
+        <mapping class="DB.Product"></mapping>
+        <mapping class="DB.Supplier"></mapping>
+        <mapping class="DB.Category"></mapping>
+        <mapping class="DB.Invoice"></mapping>
+        <mapping class="DB.Addresse"></mapping>
+        <mapping class="DB.Company"></mapping>
+        <mapping class="DB.Customer"></mapping>
+        <mapping class="DB.Order"></mapping>
+        <mapping class="DB.Dates"></mapping>
+    </session-factory>
+</hibernate-configuration>
